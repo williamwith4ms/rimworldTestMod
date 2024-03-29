@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>WilliammmmsTestModmachete</defName>
+        <label>machete</label>
+        <description>A broad blade meant for cutting vegetation in overgrown environments, machetes can be used as a broad-bladed combat knife in a pinch.</description>
+
+        <graphicData>
+            <texPath>TestMod/Machete_Melee</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+
+        <costStuffCount>40</costStuffCount>
+
+        <statBases>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>0.75</Mass>
+        </statBases>
+
+        <equippedStatOffsets>
+            <PlantWorkSpeed>0.50</PlantWorkSpeed>
+          </equippedStatOffsets>
+
+        <relicChance>1</relicChance>
+
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>Point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>
+            <displayPriority>409</displayPriority>
+        </recipeMaker>
+
+
+    </ThingDef>
+
+</Defs>
